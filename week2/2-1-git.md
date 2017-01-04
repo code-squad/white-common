@@ -264,6 +264,12 @@ $ git commit
 6. 내 프로젝트 git pull 
 7. ??
 
+--- 
+<!-- page_number: true -->
+Good Luck!
+![50%](https://octodex.github.com/images/femalecodertocat.png)
+
+
 ---
 <!-- page_number: true -->
 # 더 공부하기
