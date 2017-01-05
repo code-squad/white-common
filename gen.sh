@@ -1,11 +1,15 @@
 #!/bin/zsh
 
-if [ $# != 1 ]; then 
-	echo "Usage: $0 NUM"
+FILE=1-1.md
+if [ $# -eq 2 ]; then 
+	DIR = $2
+	FILE = $1
 else
-	echo "Generating Week $1 files..."
+	num=($(ls | grep week | sort -r | head -1 | grep -o '[0-9]'))
+	DIRNAME=week$(expr $num + 1)
 fi
 
-cp -a template week$1
+cp -a template $DIRNAME
+mv $DIRNAME/sample.md $DIRNAME/$FILE
 
 echo "Done"
