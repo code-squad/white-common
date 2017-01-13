@@ -154,12 +154,6 @@ Connection closed by foreign host.
 
 ![](images/w304.png)
 
---- 
-<!-- page_number: true -->
-Good Luck! :star::star::star:
-![50%](https://octodex.github.com/images/femalecodertocat.png)
-
-
 ---
 <!-- page_number: true -->
 # 브라우저의 동작
@@ -244,10 +238,10 @@ multipart/mixed
 
 HTTP 응답 코드 
 
-|상태코드 | 응답 | 의미 |
-|------|------|--|
-|200 | OK | 정상적인 처리|
-|302| See Other | 주로 리다이렉트 용도|
+| 상태 | 응답 | 의미 |
+| --- | --- | --- |
+| 200 | OK | 정상적인 처리|
+| 302| See Other | 주로 리다이렉트 용도|
 |404| Not Found | 리소스가 없다 |
 |403| Forbidden | 권한 없음 |
 |500| Internal Server Error | 서버 내부 오류 |
