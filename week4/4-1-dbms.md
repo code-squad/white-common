@@ -25,7 +25,7 @@ Hoyoung Jung
 
 
 ---
-# RDMBS
+# RDBMS
 Relational Database Management System?
 
 E.F. Codd, "A Relational Model of Data for Large Shared Data Banks"
@@ -37,7 +37,7 @@ E.F. Codd, "A Relational Model of Data for Large Shared Data Banks"
 # SQL이란?
 - Structured Query Language 
 - 선언적 언어 cf. 절차적 언어
-- RDMBS 제어에 사용됨
+- RDBMS 제어에 사용됨
 
 ## 관계형 데이터베이스 
 - 오라클, MySQL, MS-SQL, PostgreSQL, ...
@@ -103,7 +103,7 @@ https://www.mongodb.com/
 ---
 <!-- paœge_number: true -->
 # Cloud DB
-## AWS DyanmoDB
+## AWS DyanamoDB
 - KV Store + Document Store
 - 설치가 필요없음
 - 고성능, 고가용성, 내구도 

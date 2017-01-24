@@ -73,3 +73,7 @@ jspm_packages
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# by Honux
+a.out 
+*.pdf

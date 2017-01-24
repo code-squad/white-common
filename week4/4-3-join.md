@@ -1,5 +1,4 @@
 <!-- page_number: true -->
-![30%](images/slogo.png) ![30%](images/stove.png) 
 # DBMS Basic : Join
 <p align='center'>
 CodeSquad Master <br>

@@ -1,5 +1,4 @@
 <!-- page_number: true -->
-![30%](images/slogo.png) ![30%](images/stove.png) 
 # DBMS Basic 2: MySQL CRUD
 <p align='center'>
 CodeSquad Master <br>
@@ -63,8 +62,11 @@ $ sudo update-rc.d mysql defaults
 ---
 # 데이터베이스 및 일반 사용자 생성 
 ```sql
-CREATE DATABASE honuxdb;
-CREATE USER 'honux'@'%' IDENTIFIED BY '9a55w0rd';
+--- 데이터베이스 생성 
+CREATE DATABASE mydb;
+--- 아이디 생성 및 패스워드 지정 
+CREATE USER 'honux'@'%' IDENTIFIED BY 'my_password';
+--- 사용자에게 디비 권한 지정 
 GRANT ALL ON honuxdb.* TO 'honux'@'%';
 FLUSH PRIVILEGES;
 ```
