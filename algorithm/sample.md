@@ -1,6 +1,5 @@
-<!-- page_number: true -->
 # ![30%](images/img_white.png) 
-# Title Here
+# 자료구조 :crown: 기초 
 <p align='center'>
 CodeSquad Master <br>
 Hoyoung Jung
@@ -8,26 +7,8 @@ Hoyoung Jung
 
 ---
 <!-- page_number: true -->
-# title here
-
-
-
-
-
-
-
-
-
-
---- 
-<!-- page_number: true -->
-Good Luck! :v:
-```
-emoji :v:
-```
-![50%](https://octodex.github.com/images/femalecodertocat.png)
+# Title Here
 
 ---
-<!-- page_number: true -->
-# 참고 링크
-- http://codesquad.kr
+# Cheer Up :+1:
+![](https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png)
