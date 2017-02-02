@@ -21,7 +21,7 @@ class MyArray {
 		}
 	}
 
-	length() {
+	get length() {
 		return this.arr.length;
 	}
 
@@ -39,12 +39,12 @@ for (let i = 0; i < 10; i++) {
 	a.insert(i, i * 10);
 }
 a.printAll();
-console.log("a length = " + a.length());
+console.log("a length = " + a.length);
 console.log(a.search(60))
 
 for (let i = 0; i < 10; i+=2) {
 	a.delete(i);
 }
 a.printAll();
-console.log("a length = " + a.length());
+console.log("a length = " + a.length);
 console.log(a.search(60))
