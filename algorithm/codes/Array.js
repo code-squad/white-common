@@ -12,24 +12,16 @@ class MyArray {
 	}
 
 	delete(index) {
-		this.arr.splice(index, 1);
 	}
 
 	printAll() {
-		console.log(JSON.stringify(this.arr));
 	}
 
 	get length() {
-		return this.arr.length;
 	}
 
 	//search value and return index of the value
 	search(value) {
-		for (let i = 0; i < this.arr.length; i++) {
-			if (this.arr[i] == value)
-				return i;
-		}
-		return -1;
 	}
 }
 
