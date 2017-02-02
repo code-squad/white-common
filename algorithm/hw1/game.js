@@ -1,12 +1,11 @@
-class Game {
+module.exports = class Game {
 	constructor() {
 		//init
 		this.arr = [];
 		for (var i = 0; i < 4; i++) {
 				this.arr.push([]);
 			for (var j = 0; j < 4; j++) {
-				this.arr[i].push(i * 4 + j + 1);
-			}
+				this.arr[i].push(i * 4 + j + 1); }
 		}
 		this.arr[3][3] = -1;
 		this.cursor_i = 3;
@@ -25,11 +24,11 @@ class Game {
 
 	available() {
 		var ret = [];
-		if (this.cursor_i > 1)
+		if (this.cursor_i > 0)
 			ret.push(this.arr[this.cursor_i -1][this.cursor_j]);
 		if (this.cursor_i < 3)
 			ret.push(this.arr[this.cursor_i + 1][this.cursor_j]);
-		if (this.cursor_j > 1)
+		if (this.cursor_j > 0)
 			ret.push(this.arr[this.cursor_i][this.cursor_j - 1]);
 		if (this.cursor_j < 3)
 			ret.push(this.arr[this.cursor_i][this.cursor_j + 1]);
@@ -54,9 +53,12 @@ class Game {
 	}
 
 	shuffle() {
-		//do 
+		for(var i = 0; i < 100; i++) {
+			var values = this.available();
+			var idx = Math.floor((Math.random() * values.length));
+			this.swap(values[idx]);
+		}
 	}
-
 
 	print() {
 		var str = "";
@@ -75,6 +77,7 @@ class Game {
 	}
 }
 
+/*
 g = new Game();
 g.print();
 console.log(g.available());
@@ -83,3 +86,4 @@ g.swap(12);
 g.print();
 g.swap(11);
 g.print();
+*/
