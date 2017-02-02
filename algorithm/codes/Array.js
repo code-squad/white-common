@@ -16,17 +16,16 @@ class MyArray {
 	}
 
 	printAll() {
-		for(let i = 0; i < this.arr.length; i++) {
-			console.log(this.get(i));
-		}
+		console.log(JSON.stringify(this.arr));
 	}
 
 	get length() {
 		return this.arr.length;
 	}
 
+	//search value and return index of the value
 	search(value) {
-		for (var i = 0; i < this.arr.length; i++) {
+		for (let i = 0; i < this.arr.length; i++) {
 			if (this.arr[i] == value)
 				return i;
 		}
@@ -34,17 +33,40 @@ class MyArray {
 	}
 }
 
+/*****************
+ * test code 
+ * ignore below
+ *****************/
+var testcount = 0;
+var success = 0;
+var assert = function(condition, msg) {
+	testcount++;
+	if(!condition) {
+		console.log(msg + " test fail.");
+	}
+	else
+		success++;
+}
+
+var testResult = function() {
+	console.log(success + "/" + testcount + " test passed.");
+}
+
 var a = new MyArray();
 for (let i = 0; i < 10; i++) {
-	a.insert(i, i * 10);
+	a.insert(i, i);
 }
-a.printAll();
-console.log("a length = " + a.length);
-console.log(a.search(60))
 
-for (let i = 0; i < 10; i+=2) {
+a.printAll();
+
+assert(a.length === 10, "Array size");
+assert(a.search(6) === 6, "Search");
+
+for (let i = 8; i >=0; i-=2) {
 	a.delete(i);
 }
+
 a.printAll();
-console.log("a length = " + a.length);
-console.log(a.search(60))
+assert(a.length === 5, "Delete");
+assert(a.search(6) === -1, "Not found");
+testResult();
