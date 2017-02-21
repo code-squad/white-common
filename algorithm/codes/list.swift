@@ -38,6 +38,7 @@ struct LinkedList {
             old = old!.next
         }
         old!.next = node;
+        self.count += 1;
     }
     
     func get(index:Int) -> Int {
@@ -84,6 +85,7 @@ struct LinkedList {
     }
     
     func printAll() {
+        print("List(\(self.count)): ", terminator: "")
         var node = self.head
         while (node != nil) {
             print(node!.item, terminator:" ")
@@ -114,7 +116,6 @@ print(list.remove(index: list.search(value: 7)))
 print(list.remove(index: list.count - 1))
 list.printAll()
 
-
-
-
-
+//test addLast
+list.addLast(255)
+list.printAll()
