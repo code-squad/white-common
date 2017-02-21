@@ -6,8 +6,8 @@ class Node {
 }
 
 class MyList {
-  constructor(item) {
-    this.head = new Node(item);
+  constructor() {
+    this.head = null;
     this.length = 0;
   }
 
@@ -29,8 +29,3 @@ class MyList {
 }
 
 var list = new MyList(0);
-list.addFirst(1);
-list.addFirst(2);
-console.log(list.head);
-console.log(list.head.next);
-console.log(list.head.next.next);
