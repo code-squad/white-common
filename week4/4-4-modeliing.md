@@ -38,7 +38,7 @@ Hoyoung Jung
 ---
 # 그룹
 - 그룹을 만들려고 하다가 안 만들기로 결정
-- 
+- 없어도 될 것 같다.
 
 ---
 # 보드 
@@ -74,15 +74,31 @@ Hoyoung Jung
 ---
 # ERD 를 기반으로 Relational Model 로 변환
 테이블 형식으로 지정 
-기본키와 외래키를 명확하게 지정
+기본키와 외래키를 이용해서 관계를 명확하게 표현
+- 개체(entity)는 테이블이 된다. 
+- 1:N 관계는 외래키를 이용해서 표현하고, N 쪽 테이블에 외래키와 속성을 추가
+- M:N 관계는 별도의 테이블로 분리 
 
 ---
 # SQL 작성
 관계형 모델을 기반으로 SQL 을 작성한다. 
+데이터 타입, PK, FK등 정의에 주의를 기울인다.
 
 ---
 # NoSQL 디비의 경우 
 한 화면에 보이는 데이터 스키마는 대체로 한 아이템으로 하는 것이 좋다. 
-> User, Board 
+
+> User, Board, Card-Item 
+
 Join은 일반적으로 지원하지 않으므로, 직접 클라이언트에서 구현한다. 
 Join이 필요하지 않도록 데이터 모델링을 한다. 
+
+---
+# 참고 자료 
+
+생활 코딩 디비 모델링 링크
+- https://opentutorials.org/course/1503/8377
+
+NoSQL 데이터 모델링
+- https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-1
+(영어지만 데이터만 봐도 감이 조금 옵니다.)
