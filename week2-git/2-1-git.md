@@ -217,6 +217,11 @@ $ git push
 ```
 
 ---
+# 작업 파일의 lifecycle
+
+![](images/lifecycle.png) 
+
+---
 
 # git clone
 **새로운 폴더를 생성**하고 원격 저장소를 복사해 오는 명령
