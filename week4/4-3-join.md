@@ -1,11 +1,4 @@
-<!-- page_number: true -->
-# DBMS Basic : Join
-<p align='center'>
-CodeSquad Master <br>
-Hoyoung Jung <br>
-</p>
 
-<p align='right'><img src='images/logo.png' width = '15%'> </p>
 
 ---
 # 실습 
